@@ -14,3 +14,25 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+Events
+- any kind of actions that you can perform on a web page
+- focus (click inside a textbox, scroll, drag, type)
+
+Event bubbling propogation
+<div onClick>
+    <button onClick>
+</div>
+
+-clicking on the button means that you are clicking on the div
+-both onClick will be triggered
+
+Forms
+<form onSubmit>
+- click on submit will reload the page or take you to the next page
+- e.preventDefault(): prevent the default behavior
+
+Forms
+1. uncontrolled field: not map to a state
+2. controlled field: map to a state
